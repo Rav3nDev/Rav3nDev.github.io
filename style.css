@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@300&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #c8d3f5;
+  text-decoration: none;
+}
+body {
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: grid;
+  place-items: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  background-color: #222436;
+  color: #c8d3f5;
+}
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5em;
+}
+
+.card {
+  text-align: center;
+  --flow-space: 0.5em;
+  flex: 1 1 14rem;
+  padding: 1.5em 2em;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  align-items: start;
+  gap: 1.25em;
+  color: #c8d3f5;
+  background-color: #1e2030;
+  border: 1px solid #eceff133;
+  border-radius: 15px;
+}
+
+.name {
+  padding-top: 15px;
+  font-family: "Indie Flower", cursive;
+  text-align: center;
+  font-size: 2.75em;
+  line-height: 0.25;
+  font-weight: 700;
+}
+
+.pronouns {
+  text-align: center;
+  font-size: 0.55em;
+}
+
+.flow {
+  max-width: 75rem;
+  padding: 3em 1.5em;
+}
+.flow > * + * {
+  margin-top: var(--flow-space, 1.25em);
+}
